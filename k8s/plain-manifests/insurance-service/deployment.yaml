@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: insurance-service
-          image: vivme/finovra-insurance-service:1.0.0
+          image: viveme/finovra-insurance-service:1.0.0
           ports:
             - containerPort: 8000
           env:
