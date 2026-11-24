@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: finovra
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/get-kumarvivek/gitops-sample.git
+    targetRevision: main
+    path: k8s/plain-manifests
+    directory:
+      recurse: true
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: finovra
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
