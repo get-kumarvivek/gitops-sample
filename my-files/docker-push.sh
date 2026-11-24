@@ -24,7 +24,7 @@ docker push viveme/finovra-loans-service:1.0.0
 
 // argocd credentails
 // admin    
-// 0WO9rkkhiPEs3ZHK
+// xxxxxxxxxxxxxx
 
 // arogo cd login command
-// argocd login localhost:8080 --username admin --password 0WO9rkkhiPEs3ZHK --insecure
+// argocd login localhost:8080 --username admin --password xxxxxxxxxxx --insecure
